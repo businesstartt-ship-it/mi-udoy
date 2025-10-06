@@ -1,0 +1,189 @@
+> Udoy:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocoCrust Chocolates</title>
+
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="CocoCrust Chocolates">
+    <meta property="og:description" content="Handcrafted premium chocolates – ৳250–৳400 per bar. Order now via WhatsApp!">
+    <meta property="og:image" content="https://yourusername.github.io/cococrust-landing/images/hero-chocolate.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/cococrust-landing/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #fff7f0 0%, #ffe6cc 100%);
+            color: #333;
+        }
+
+        /* Header / Hero */
+        header {
+            background: url('images/hero-chocolate.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px 60px 20px;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+        header h1, header p, header a {
+            position: relative;
+            z-index: 2;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0 20px 0;
+        }
+        header a.buy-btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        header a.buy-btn:hover {
+            background-color: #e65c00;
+            transform: scale(1.05);
+        }
+
+        /* Products Section */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 25px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            width: 300px;
+            text-align: center;
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        .product-card h2 {
+            font-size: 1.6em;
+            margin: 15px 0 5px 0;
+        }
+        .product-card p.price {
+            font-size: 1.3em;
+            color: #b34700;
+            margin: 5px 0 15px 0;
+            font-weight: bold;
+        }
+        .product-card a.buy-btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .product-card a.buy-btn:hover {
+            background-color: #e65c00;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+
+> Udoy:
+background-color: #5c2a00;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        footer p {
+            margin: 8px 0;
+        }
+        footer a {
+            color: #ffcc99;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+            header h1 {
+                font-size: 2.2em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CocoCrust Chocolates</h1>
+        <p>Handcrafted Premium Chocolates – ৳250–৳400 per bar</p>
+        <a class="buy-btn" href="https://wa.me/8801410162903" target="_blank">Order Now</a>
+    </header>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="images/chocolate1.jpg" alt="CocoCrust Dark Chocolate" loading="lazy">
+            <h2>Dark Chocolate</h2>
+            <p class="price">৳300 per bar</p>
+            <a class="buy-btn" href="https://wa.me/8801410162903" target="_blank">Order Now</a>
+        </div>
+        <div class="product-card">
+            <img src="images/chocolate2.jpg" alt="CocoCrust Milk Chocolate" loading="lazy">
+            <h2>Milk Chocolate</h2>
+            <p class="price">৳250 per bar</p>
+            <a class="buy-btn" href="https://wa.me/8801410162903" target="_blank">Order Now</a>
+        </div>
+        <div class="product-card">
+            <img src="images/chocolate3.jpg" alt="CocoCrust Nutty Chocolate" loading="lazy">
+            <h2>Nutty Chocolate</h2>
+            <p class="price">৳400 per bar</p>
+            <a class="buy-btn" href="https://wa.me/8801410162903" target="_blank">Order Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us directly via WhatsApp:</p>
+        <p><a href="https://wa.me/8801410162903">+8801410162903</a></p>
+        <p>© 2025 CocoCrust Chocolates</p>
+    </footer>
+</body>
+</html>
